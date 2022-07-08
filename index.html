@@ -12,10 +12,33 @@
     rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+   
 </head>
 <body>
-    <!--Верхняя линия-->
+
+
     <header>
+            <div>
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="window">
+                        <div class="warning_block">
+                            <svg class="icon-Vector-close" width="18px" height="18px">
+                                <use href="./images/icon/symbol-defs.svg#icon-warning"></use>
+                            </svg>
+                            <p class="warning_title">You are not protected</p>
+                            <p class="warning_address">Your IP Address: 107.3.176.194</p>
+                            <p class="warning_address">Your ISP: Comcast Cable</p>
+                            <p class="warning_btn-more">Learn More ›</p>
+                            <button class="warning_btn-close">
+                                <svg class="icon-Vector-close" width="18px" height="18px">
+                                    <use href="./images/icon/symbol-defs.svg#icon-cancel">
+                                    </use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         <div class="container nav-menu">
             <a href="index.html">
                 <span class="nav-menu_logo">Company Name</span>
@@ -53,7 +76,7 @@
                         </li>
                 </ul>
             
-            <!-- header -->
+
             
                  <button class="nav-menu_btn">LOG IN</button>
                 <button class="nav-menu_btn">GET STARTED</button>
@@ -63,25 +86,26 @@
     
     </header>
     
-    <!--Шапка-->
+
     
     <main>
         <section>
             <div class="container">
     
-                <h1>заголовок</h1>
-                <div>
-                    <img src="./images/Bitmap@2x.jpg">
-                    <div>
-                        <h3>TV Addons: Legal battle against Canadian media giants demonstrates severe consequences facing developers accused of
+                <h1 hidden >заголовок</h1>
+                <div class="hat-container">
+                    <img class="hat-container_img" src="./images/Bitmap@2x.jpg">
+                    <div class="hat-container_info">
+                        <h3 class="hat-container_info_title">TV Addons: Legal battle against Canadian media giants demonstrates severe consequences facing developers accused of
                         copyright infringement</h3>
                         <p>
-                            <p>Danica Sergison <span> </span>|<span> JUL 08, 2018</span></p>
-                            <p>Copyright, News, Ope</p>
-                            <p>
-                               <svg width="32px" height="32px">
-                                  <use href="./images/icon/Comment_2.svg"></use>
-                               </svg><span>0</span>
+                            <p class="hat-container_info_name">Danica Sergison<span class="hat-container_info_line">|</span><span class="hat-container_info_date">JUL 08, 2018</span></p>
+                            <p class="hat-container_info_hash">Copyright, News, Open Source, Privacy</p>
+                            <p class="hat-container_info_svg">
+                               <svg width="16px" height="16px">
+                                  <use href="./images/icon/symbol-defs.svg#icon-message"></use>
+                               </svg>
+                               <span class="hat-container_info_amount">0</span>
                         </p>
                         </p>
                     </div>
@@ -97,392 +121,434 @@
     
             <div class="container">
     
-                <h2>подзаголовок</h2>
-                <ul>
-                    <li>TAGS:</li>
-                    <li>bitcoin</li>
-                    <li>bittorrent</li>
-                    <li>irc</li>
-                    <li>news</li>
-                    <li>privacy</li>
-                    <li>programming</li>
-                    <li>security</li>
+             <h2 hidden >подзаголовок</h2>
+                <div  class="nav-tags">
+                  <ul class="nav-tags_list">
+                    <li class="nav-tags_item">TAGS:</li>
+                    <li class="nav-tags_item">bitcoin</li>
+                    <li class="nav-tags_item">bittorrent</li>
+                    <li class="nav-tags_item">irc</li>
+                    <li class="nav-tags_item">news</li>
+                    <li class="nav-tags_item">privacy</li>
+                    <li class="nav-tags_item">programming</li>
+                    <li class="nav-tags_item">security</li>
                     <!-- --------------------------------------------------- -->
-                    <li>team</li>
-                    <li>contact</li>
                 </ul>
+                <ul class="nav-tags_list">
+                    <li class="nav-tags_team">team</li>
+                    <li class="nav-tags_team">contact</li>
+                </ul>
+            </div>
+                
             </div>
     
         </section>
     
-        <!-- чем мы занимаемся -->
+       
         <div class="container">
-        <section>
-            <div class="container">
-                <h3>Recent posts</h3>
-                <ul>
-                    <li>
-                        <div>
-                        <img src="./images/server@x2.jpg">
-                        <div>
-                            <h4>The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises</h4>
+            <div class="block-posts">      
+                 <section class="search-post">
+            <div class="post">
+                <h4 class="post-name">Recent posts</h4>
+                <ul class="post-list">
+                    <li class="post-item">
+                        <div class="post-item_block">
+                        <img class="post-item_img" src="./images/server@x2.jpg">
+                        <div class="post-info">
+                            <h4 class="post-info_title">The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises</h4>
                             <p>
-                            <p>Derek Zimmer <span> </span>|<span> JUL 25, 2018</span></p>
-                            <p>Governments, Networking, Open Source, Privacy, Security</p>
-                            <p>
-                                <svg width="32px" height="32px">
-                                    <use href="./images/icon/Comment_2.svg"></use>
-                                </svg><span>0</span>
+                            <p class="post-info_name">Derek Zimmer<span class="post-info_line">|</span><span class="post-info_date">JUL 25, 2018</span></p>
+                            <p class="post-info_hash">Governments, Networking, Open Source, Privacy, Security</p>
+                            <p class="post-info_svg">
+                                <svg width="16px" height="16px">
+                                    <use href="./images/icon/symbol-defs.svg#icon-message"></use>
+                                </svg><span class="post-info_amount">0</span>
                             </p>
                             </p>
                         </div>
+                        
                     </div>
+                    
                 </li>
-                    <li>
-                        <div>
-                        <img src="./images/airplane@x2.jpg">
-                        <div>
-                            <h4>How to get cheaper flights using a VPN</h4>
+                <li class="post-item">
+                    <div class="post-item_block">
+                        <img class="post-item_img" src="./images/airplane@x2.jpg">
+                        <div class="post-info">
+                            <h4 class="post-info_title">How to get cheaper flights using a VPN
+                            </h4>
                             <p>
-                            <p>Jayson <span> </span>|<span> JUL 24, 2018</span></p>
-                            <p>Guides</p>
-                            <p>
-                                <svg width="32px" height="32px">
-                                    <use href="./images/icon/Comment_2.svg"></use>
-                                </svg><span>0</span>
+                            <p class="post-info_name">Jayson<span class="post-info_line">|</span><span class="post-info_date">JUL
+                                    24, 2018</span></p>
+                            <p class="post-info_hash">Guides</p>
+                            <p class="post-info_svg">
+                                <svg width="16px" height="16px">
+                                    <use href="./images/icon/symbol-defs.svg#icon-message"></use>
+                                </svg><span class="post-info_amount">0</span>
                             </p>
                             </p>
                         </div>
+                        
                     </div>
+                
                 </li>
-                    <li>
-                        <div>
-                        <img src="./images/Group@x2.jpg">
-                        <div>
-                            <h4>Net Neutrality was repealed, but the fight is far from over</h4>
+                    <li class="post-item">
+                        <div class="post-item_block">
+                            <img class="post-item_img" src="./images/Group@x2.jpg">
+                            <div class="post-info">
+                                <h4 class="post-info_title">Net Neutrality was repealed, but the fight is far from over
+                                </h4>
+                                <p>
+                                <p class="post-info_name">Chris Miller<span class="post-info_line">|</span><span class="post-info_date">JUL
+                                        22, 2018</span></p>
+                                <p class="post-info_hash">Governments, Net Neutrality, News</p>
+                                <p class="post-info_svg">
+                                    <svg width="16px" height="16px">
+                                        <use href="./images/icon/symbol-defs.svg#icon-message"></use>
+                                    </svg><span class="post-info_amount">0</span>
+                                </p>
+                                </p>
+                            </div>
+                          
+                        </div>
+                    
+                    </li>
+                <li class="post-item">
+                    <div class="post-item_block">
+                        <img class="post-item_img" src="./images/server@x2.jpg">
+                        <div class="post-info">
+                            <h4 class="post-info_title">The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises
+                            </h4>
                             <p>
-                            <p>Chris Miller <span> </span>|<span> JUL 22, 2018</span></p>
-                            <p>Governments, Net Neutrality, News</p>
-                            <p>
-                                <svg width="32px" height="32px">
-                                    <use href="./images/icon/Comment_2.svg"></use>
-                                </svg><span>0</span>
+                            <p class="post-info_name">Derek Zimmer<span class="post-info_line">|</span><span class="post-info_date">JUL
+                                    25, 2018</span></p>
+                            <p class="post-info_hash">Governments, Networking, Open Source, Privacy, Security</p>
+                            <p class="post-info_svg">
+                                <svg width="16px" height="16px">
+                                    <use href="./images/icon/symbol-defs.svg#icon-message"></use>
+                                </svg><span class="post-info_amount">0</span>
                             </p>
                             </p>
                         </div>
+                        
                     </div>
+                
                 </li>
-                <li>
-                    <div>
-                        <img src="./images/server@x2.jpg">
-                        <div>
-                            <h4>The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises</h4>
+                <li class="post-item">
+                    <div class="post-item_block">
+                        <img class="post-item_img" src="./images/airplane@x2.jpg">
+                        <div class="post-info">
+                            <h4 class="post-info_title">How to get cheaper flights using a VPN
+                            </h4>
                             <p>
-                            <p>Derek Zimmer <span> </span>|<span> JUL 25, 2018</span></p>
-                            <p>Governments, Networking, Open Source, Privacy, Security</p>
-                            <p>
-                                <svg width="32px" height="32px">
-                                    <use href="./images/icon/Comment_2.svg"></use>
-                                </svg><span>0</span>
+                            <p class="post-info_name">Jayson<span class="post-info_line">|</span><span class="post-info_date">JUL
+                                    24, 2018</span></p>
+                            <p class="post-info_hash">Guides</p>
+                            <p class="post-info_svg">
+                                <svg width="16px" height="16px">
+                                    <use href="./images/icon/symbol-defs.svg#icon-message"></use>
+                                </svg><span class="post-info_amount">0</span>
                             </p>
                             </p>
                         </div>
+                        
                     </div>
+                
                 </li>
-                <li>
-                    <div>
-                        <img src="./images/airplane@x2.jpg">
-                        <div>
-                            <h4>How to get cheaper flights using a VPN</h4>
+                <li class="post-item">
+                    <div class="post-item_block">
+                        <img class="post-item_img" src="./images/Group@x2.jpg">
+                        <div class="post-info">
+                            <h4 class="post-info_title">Net Neutrality was repealed, but the fight is far from over
+                            </h4>
                             <p>
-                            <p>Jayson <span> </span>|<span> JUL 24, 2018</span></p>
-                            <p>Guides</p>
-                            <p>
-                                <svg width="32px" height="32px">
-                                    <use href="./images/icon/Comment_2.svg"></use>
-                                </svg><span>0</span>
+                            <p class="post-info_name">Chris Miller<span class="post-info_line">|</span><span class="post-info_date">JUL
+                                    22, 2018</span></p>
+                            <p class="post-info_hash">Governments, Net Neutrality, News</p>
+                            <p class="post-info_svg">
+                                <svg width="16px" height="16px">
+                                    <use href="./images/icon/symbol-defs.svg#icon-message"></use>
+                                </svg><span class="post-info_amount">0</span>
                             </p>
                             </p>
                         </div>
+                        
                     </div>
+                
                 </li>
-                <li>
-                    <div>
-                        <img src="./images/Group@x2.jpg">
-                        <div>
-                            <h4>Net Neutrality was repealed, but the fight is far from over</h4>
-                            <p>
-                            <p>Chris Miller <span> </span>|<span> JUL 22, 2018</span></p>
-                            <p>Governments, Net Neutrality, News</p>
-                            <p>
-                                <svg width="32px" height="32px">
-                                    <use href="./images/icon/Comment_2.svg"></use>
-                                </svg><span>0</span>
-                            </p>
-                            </p>
-                        </div>
-                    </div>
-                </li>
+                <button class="search-post_block-btn">older posts</button>
            
                 </ul>
             </div>
         </section>
-        <!--Наша команда-->
+      
     
-        <section>
-            <div>
-                <form action="">
-                    <div>
-                    <label for="name">search</label>
-                    <input  type="text" name="name" placeholder="Search blog" >
-                    <svg>
-                        <use href="./images/icon/search.svg" width="12px" height="12px"></use>
+        <section class="search-post_block">
+
+            
+            <div class="search-post_container">
+                <form class="search-post_form" action="">
+                    
+                   
+                    <input class="search-post_input" type="text" name="name" placeholder="Search blog" >
+                   
+                <button class="search-post_btn"> 
+                    <svg width="18px" height="18px">
+                        <use href="./images/icon/symbol-defs.svg#icon-search" width="18px" height="18px"></use>
                     </svg>
-                </div>
+                </button>
             </form>
-            <div>
-                <svg>
-                    <use href="./images/icon/announcements.svg" width="12px" height="12px"></use>
+            <div class="search-post_block-constainer">
+                <div class="search-post_block-title">
+                    <svg width="38px" height="38px">
+                    <use href="./images/icon/symbol-defs.svg#icon-alarm" width="38px" height="38px"></use>
                 </svg>
-                <h3>Announcements</h3>
-                <ul>
-                    <li>Upcoming Changes (Live Chat, Less Censorship, More Access)</li>
-                    <li>New Servers (US Washington DC)</li>
-                    <li>New Servers (US Denver)</li>
-                    <li>Open Source: Releasing the PIA iOS Client</li>
-                    <li>Opera Extension is now available</li>
+                <h3 class="search-post_title">Announcements</h3>
+            </div>
+                
+                <ul class="search-post_list">
+                    <li class="search-post_item">Upcoming Changes (Live Chat, Less Censorship, More Access)</li>
+                    <li class="search-post_item">New Servers (US Washington DC)</li>
+                    <li class="search-post_item">New Servers (US Denver)</li>
+                    <li class="search-post_item">Open Source: Releasing the PIA iOS Client</li>
+                    <li class="search-post_item">Opera Extension is now available</li>
                 </ul>
             </div>
-            <div>
-                <svg>
-                    <use href="./images/icon/announcements1.svg" width="12px" height="12px"></use>
+            <div class="search-post_block-constainer">
+                <div class="search-post_block-title">
+                  <svg width="38px" height="38px">
+                    <use href="./images/icon/symbol-defs.svg#icon-feed" width="38px" height="38px"></use>
                 </svg>
-                <h3>Popular posts</h3>
-                <ul>
-                    <li>The Gift of Privacy</li>
-                    <li>UK High Court Censors Many Links To Popcorn Time: Useless, Dangerous Gesture</li>
-                    <li>About the PIA Client Security and VPN Security in General</li>
-                    <li>A Private Net Is Just As Fundamental A Right As Freedom Of Speech</li>
-                    <li>Wiretapping Today Just Doesn’t Mean What The Word Meant In The 1990s, So Don’t Fall For That Lie</li>
+                <h3 class="search-post_title">Popular posts</h3>  
+                </div>
+                
+                <ul class="search-post_list">
+                    <li class="search-post_item">The Gift of Privacy</li>
+                    <li class="search-post_item">UK High Court Censors Many Links To Popcorn Time: Useless, Dangerous Gesture</li>
+                    <li class="search-post_item">About the PIA Client Security and VPN Security in General</li>
+                    <li class="search-post_item">A Private Net Is Just As Fundamental A Right As Freedom Of Speech</li>
+                    <li class="search-post_item">Wiretapping Today Just Doesn’t Mean What The Word Meant In The 1990s, So Don’t Fall For That Lie</li>
                 </ul>
             </div>
-            <div>
-                <img src="./images/Bit.jpg" alt="">
-                <h3>Tag cloud</h3>
-                <img src="./images/ScreenShot.jpg" alt="">
+            <div class="search-post_block-constainer">
+                <img class="search-post_block-img" src="./images/Bit.jpg" alt="" width="340px" height="454px">
+                <h3 class="search-post_block-constainer_title">Tag cloud</h3>
+                <img class="search-post_block-img" src="./images/ScreenShot.jpg" alt="" width="344px" height="309px">
             </div>
-            </div>
-        </section>
-        <section>
-            <h3>Sign up today – 7 day money back guarantee</h3>
-            <ul>
-                <li>
-                    <div>
-                        <h4>MONTHLY</h4>
-                        <span></span>
-                        <p><span>$</span><span>6.95</span><span>/mo.</span></p>
-                        <p>Includes all VPN features.</p>
-                        <button>SIGN UP</button>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <h4>Two Years</h4>
-                        <span></span>
-                        <p><span>$</span><span>2.91</span><span>/mo.</span></p>
-                        <p><span>$166.80</span><span>$69.95 per two years</span></p>
-                        <p>Save 58%*</p>
-                        <button>SIGN UP</button>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <h4>YEARLY</h4>
-                        <span></span>
-                        <p><span>$</span><span>3.33</span><span>/mo.</span></p>
-                        <p><span>$83.40</span><span>$39.95 per year</span></p>
-                        <p>Save 52%*</p>
-                        <button>SIGN UP</button>
-                    </div>
-                </li>
-            </ul>
-            <div>
-                <h4>Ways to pay:</h4>
-                <ul>
-                    <li>
-                        <svg>
-                        <use href="./images/icon/visa.svg" width="12px" height="12px"></use>
-                    </svg>
-                </li>
-                <li>
-                    <svg>
-                        <use href="./images/icon/mc_vrt_pos.svg" width="12px" height="12px"></use>
-                    </svg>
-                </li>
-                <li>
-                    <svg>
-                        <use href="./images/icon/amex_logo.svg" width="12px" height="12px"></use>
-                    </svg>
-                </li>
-                <li>
-                    <svg>
-                        <use href="./images/icon/pay_pal.svg" width="12px" height="12px"></use>
-                    </svg>
-                </li>
-                <li>
-                    <svg>
-                        <use href="./images/icon/Bitcoin.svg" width="12px" height="12px"></use>
-                    </svg>
-                </li>
-                <li>
-                    <svg>
-                        <use href="./images/icon/OK_Pay.svg" width="12px" height="12px"></use>
-                    </svg>
-                </li>
-                <li>
-                    <svg>
-                        <use href="./images/icon/Amazon-Pay-logo.svg" width="12px" height="12px"></use>
-                    </svg>
-                </li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <button>
-                            <span>How to pay anonymously</span>
-                            <svg >
-                                <use href="./images/icon/upload.svg" width="12px" height="12px"></use>
-                            </svg>
-                    </button>
-                </li>
-                    <li>
-                        <button>
-                            <span>REDEEM GIFT CARD</span>
-                            <svg >
-                                <use href="./images/icon/upload.svg" width="12px" height="12px"></use>
-                            </svg>
-                        </button>
-                    </li>
-                </ul>
+            
             </div>
         </section>
     </div>
+ 
+
+    </div>
+            <section class="pricing">
+                <h3 class="pricing-title">Sign up today – 7 day money back guarantee</h3>
+                <ul class="pricing-title_list">
+                    <li class="pricing-title_item">
+                        <div class="pricing-title_block">
+                            <h4 class="pricing-title_item-title">MONTHLY</h4>
+                            <hr class="pricing-title_item-line">
+                            <p class="pricing-title_item-current">
+                                <span class="pricing-title_item-sumbol">$</span>
+                                <span class="pricing-title_item-number">6.95</span>
+                                <span class="pricing-title_item-sumbol-slash">/mo.</span>
+                                <hr class="pricing-title_item-current_line">
+                            </p>
+                            <p class="pricing-title_item-current_title">Includes all VPN features.</p>
+                            <button class="pricing-title_item-current_btn">SIGN UP</button>
+                        </div>
+                    </li>
+                    <li class="pricing-title_item">
+                        <div class="pricing-title_block">
+                            <h4 class="pricing-title_item-title">Two Years</h4>
+                            <hr class="pricing-title_item-line">
+                            <p class="pricing-title_item-current">
+                                <span class="pricing-title_item-sumbol">$</span>
+                                <span class="pricing-title_item-number">2.91</span>
+                                <spann class="pricing-title_item-sumbol-slash">/mo.</spann>
+                                <hr class="pricing-title_item-current_line">
+                            </p>
+                            <p><span class="pricing-title_item-current_sale">$166.80</span>
+                                <span class="pricing-title_item-current_title">$69.95 per two years</span>
+                            </p>
+                            <p class="pricing-title_item-sumbol-precent">Save 58%*</p>
+                            <button class="pricing-title_item-current_btn">SIGN UP</button>
+                        </div>
+                    </li>
+                    <li class="pricing-title_item">
+                        <div class="pricing-title_block">
+                            <h4 class="pricing-title_item-title">YEARLY</h4>
+                            <hr class="pricing-title_item-line">
+                            <p class="pricing-title_item-current">
+                                <span class="pricing-title_item-sumbol">$</span>
+                                <span class="pricing-title_item-number">3.33</span>
+                                <span class="pricing-title_item-sumbol-slash">/mo.</span>
+                                <hr class="pricing-title_item-current_line">
+                            </p>
+                            <p><span class="pricing-title_item-current_sale">$83.40</span>
+                                <span class="pricing-title_item-current_title">$39.95 per year</span>
+                            </p>
+                            <p class="pricing-title_item-sumbol-precent">Save 52%*</p>
+                            <button class="pricing-title_item-current_btn">SIGN UP</button>
+                        </div>
+                    </li>
+                </ul>
+                <div class="pricing_sponsor">
+                    <h4 class="pricing_title">Ways to pay:</h4>
+                    <ul class="pricing_list">
+                        <li class="pricing_item">
+                            <svg class="pricing_svg">
+                                <use href="./images/icon/symbol-Logos.svg#icon-visa_logo_icon_206647" width="92px" height="92px"></use>
+                            </svg>
+                        </li>
+                        <li class="pricing_item">
+                            <svg class="pricing_svg">
+                                <use href="./images/icon/symbol-Logos.svg#icon-mc_vrt_pos" width="92px" height="92px"></use>
+                            </svg>
+                        </li>
+                        <li class="pricing_item">
+                            <svg class="pricing_svg">
+                                <use href="./images/icon/symbol-Logos.svg#icon-amex_logo" width="92px" height="92px"></use>
+                            </svg>
+                        </li>
+                        <li class="pricing_item">
+                            <svg class="pricing_svg">
+                                <use href="./images/icon/symbol-Logos.svg#icon-business_finance" width="92px" height="92px"></use>
+                            </svg>
+                        </li>
+                        <li class="pricing_item">
+                            <svg class="pricing_svg">
+                                <use href="./images/icon/symbol-Logos.svg#icon-Bitcoin" width="92px" height="92px"></use>
+                            </svg>
+                        </li>
+                        <li class="pricing_item">
+                            <svg class="pricing_svg">
+                                <use href="./images/icon/symbol-Logos.svg#icon-OK-Pay" width="92px" height="92px"></use>
+                            </svg>
+                        </li>
+                        <li class="pricing_item">
+                            <svg class="pricing_svg">
+                                <use href="./images/icon/symbol-Logos.svg#icon-amazon_logo" width="100px" height="100px"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pricing-block">
+                    
+                            <p class="pricing-block_link">
+                                <span class="pricing-block_title">How to pay anonymously</span>
+                                <svg  width="12px" height="12px">
+                                    <use href="./images/icon/symbol-defs.svg#icon-arrow-right2" width="12px" height="12px"></use>
+                                </svg>
+                            </p>
+                        
+                            <p class="pricing-block_link">
+                                <span class="pricing-block_title">REDEEM GIFT CARD</span>
+                                <svg  width="12px" height="12px">
+                                    <use href="./images/icon/symbol-defs.svg#icon-arrow-right2" width="12px" height="12px"></use>
+                                </svg>
+                            </p>
+                       
+                </div>
+            </section>
     </main>
     <!--Подвал-->
-    <footer>
-        <div>
-            <h3>Company Name</h3>
-            <div>
-                <h4>Company</h4>
-                <ul>
-                    <li>About Us</li>
-                    <li>Our Team</li>
-                    <li>Careers</li>
-                    <li>Press</li>
-                    <li>In the Media</li>
-                    <li>VPN Reviews</li>
-                    <li>Companies We Support</li>
-                    <li>Contact Us</li>
-                    <li>Blog</li>
+    <footer class="container">
+        <h3 class="footer_title">Company Name</h3>
+        <div class="footer">
+            
+            <div class="footer_block_Company">
+                <h4 class="footer_block-title">Company</h4>
+                <ul class="footer_block-list_Company">
+                    <li class="footer_block-item_Company">About Us</li>
+                    <li class="footer_block-item_Company">Our Team</li>
+                    <li class="footer_block-item_Company">Careers</li>
+                    <li class="footer_block-item_Company">Press</li>
+                    <li class="footer_block-item_Company">In the Media</li>
+                    <li class="footer_block-item_Company">VPN Reviews</li>
+                    <li class="footer_block-item_Company">Companies We Support</li>
+                    <li class="footer_block-item_Company">Contact Us</li>
+                    <li class="footer_block-item_Company">Blog</li>
                 </ul>
             </div>
             <div>
                 <p>
-                    <h4>programs</h4>
-                <ul>
-                    <li>Whitehat Security</li>
-                    <li>Affiliates</li>
+                    <h4 class="footer_block-title">programs</h4>
+                <ul class="footer_block-title_programs">
+                    <li class="footer_block-item_programs">Whitehat Security</li>
+                    <li class="footer_block-item_programs">Affiliates</li>
                 </ul>
             </p>
                 <p>
-                    <h4>learn more</h4>
-                    <ul>
-                        <li>VPN Encryption</li>
-                        <li>Android VPN App</li>
-                        <li>iOS VPN App</li>
-                        <li>PIA Sitemap</li>
+                    <h4 class="footer_block-title">learn more</h4>
+                    <ul class="footer_block-title_learn-more">
+                        <li class="footer_block-item_learn-more">VPN Encryption</li>
+                        <li class="footer_block-item_learn-more">Android VPN App</li>
+                        <li class="footer_block-item_learn-more">iOS VPN App</li>
+                        <li class="footer_block-item_learn-more">PIA Sitemap</li>
                     </ul>
                 </p>
             </div>
             <div>
-                <h4>LEGAL</h4>
-                <ul>
-                    <li>Terms Of Service</li>
-                    <li>Privacy Policy</li>
-                    <li>DMCA Policy</li>
-                    <li>Export Control Policy</li>
+                <h4 class="footer_block-title">LEGAL</h4>
+                <ul class="footer_block-title_LEGAL">
+                    <li class="footer_block-item_LEGAL">Terms Of Service</li>
+                    <li class="footer_block-item_LEGAL">Privacy Policy</li>
+                    <li class="footer_block-item_LEGAL">DMCA Policy</li>
+                    <li class="footer_block-item_LEGAL">Export Control Policy</li>
                 </ul>
             </div>
-            <div>
-                <h4>ABOUT</h4>
-                <p>Private Internet Access is the leading VPN Service provider specializing in secure, encrypted VPN tunnels which create
+            <div class="footer_block-ABOUT">
+                <h4 class="footer_block-title">ABOUT</h4>
+                <ul class="footer_block-title_ABOUT">
+                    <li class="footer_block-item_ABOUT">Private Internet Access is the leading VPN Service provider specializing in secure, encrypted VPN tunnels which create
                 several layers of privacy and security providing you safety on the internet. Our service is backed by multiple gateways
-                worldwide with access in 28+ countries, 44+ regions.</p>
-                <p>Map data provided by Google.</p>
-                <p>PC Mag Editor’s Choice award image reprinted with permission. © 2012 Ziff Davis, Inc. All Rights Reserved.</p>
-                <p>PC Mag quote reprinted from www.pcmag.com with permission. © 2012 Ziff Davis, Inc. All Rights Reserved.</p>
-                <p>© London Trust Media, Inc. All Rights Reserved.</p>
-            </div>
-            <div>
-                <h4>SOCIAL</h4>
-                <ul>
-                    <li>
-                        <svg>
-                            <use href="./images/icon/f.svg" width="12px" height="12px"></use>
+                worldwide with access in 28+ countries, 44+ regions.</li>
+                   <li class="footer_block-item_ABOUT">Map data provided by Google.</li>
+                   <li class="footer_block-item_ABOUT">PC Mag Editor’s Choice award image reprinted with permission. © 2012 Ziff Davis, Inc. All Rights Reserved.</li>
+                   <li class="footer_block-item_ABOUT">PC Mag quote reprinted from www.pcmag.com with permission. © 2012 Ziff Davis, Inc. All Rights Reserved.</li>
+                   <li class="footer_block-item_ABOUT">© London Trust Media, Inc. All Rights Reserved.</li>
+                </ul>
+           
+                <h4 class="footer_title_title">SOCIAL</h4>
+                <ul class="footer_cocial">
+                    <li class="footer_svg">
+                        <svg width="30px" height="30px">
+                            <use href="./images/icon/symbol-defs.svg#icon-facebook" width="30px" height="30px"></use>
                         </svg>
                     </li>
-                    <li>
-                        <svg>
-                            <use href="./images/icon/Shape.svg" width="12px" height="12px"></use>
+                    <li class="footer_svg">
+                        <svg width="30px" height="30px">
+                            <use href="./images/icon/tviter.svg#icon-twitter" width="30px" height="30px"></use>
                         </svg>
                     </li>
-                    <li>
-                        <svg>
-                            <use href="./images/icon/Shape1.svg" width="12px" height="12px"></use>
+                    <li class="footer_svg">
+                        <svg width="30px" height="30px">
+                            <use href="./images/icon/symbol-defs.svg#icon-google-plus" width="30px" height="30px"></use>
                         </svg>
                     </li>
-                    <li>
-                        <svg>
-                            <use href="./images/icon/Group.svg" width="12px" height="12px"></use>
+                    <li class="footer_svg">
+                        <svg width="30px" height="30px">
+                            <use href="./images/icon/symbol-defs.svg#icon-linkedin" width="30px" height="30px"></use>
                         </svg>
                     </li>
-                    <li>
-                        <svg>
-                            <use href="./images/icon/2SL.svg" width="12px" height="12px"></use>
+                    <li class="footer_svg">
+                        <svg width="30px" height="30px">
+                            <use href="./images/icon/symbol-defs.svg#icon-reddit" width="30px" height="30px"></use>
                         </svg>
                     </li>
-                    <li>
-                        <svg>
-                            <use href="./images/icon/youtube.svg" width="12px" height="12px"></use>
+                    <li class="footer_svg">
+                        <svg width="30px" height="30px">
+                            <use href="./images/icon/symbol-defs.svg#icon-youtube" width="30px" height="30px"></use>
                         </svg>
                     </li>
                 </ul>
             </div>
            
-            <div class="backdrop is-hidden" data-modal>
-                <div class="window">
-                    <div> 
-                        <svg class="icon-Vector-close" width="11px" height="11px">
-                            <use href="./images/icon/alert.svg"></use>
-                        </svg>
-    
-                   
-                    <p>You are not protected</p>
-                    <p>Your IP Address: 107.3.176.194</p>
-                    <p>Your ISP: Comcast Cable</p>
-                    <button>Learn More ›</button>
-                    <button><svg class="icon-Vector-close" width="11px" height="11px">
-                        <use href="./images/icon/closed.svg"></use>
-                    </svg></button>
-                </div>
-                </div>
-            </div>
+        
         </div>
     </footer>
-    <div>
-    
-    </div>
-    <!-- <script src="./js/modal.js"></script> -->
+
+    <script src="./alert.js"></script>
 </body>
 </html>
