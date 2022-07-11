@@ -1,0 +1,301 @@
+
+@media (min-width:1201px) {
+.post-block_name{
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    }
+.search-post_block-name{
+    display: flex;
+    justify-content: space-between;
+}
+.block-posts {
+        display: flex;
+        flex-direction: column;
+
+    };
+.post-name {
+    width: 190px;
+    @include fonts(300);
+    font-size: 32px;
+    line-height: 44px;
+    color: $text-color;
+}
+
+.post-list {
+    width: 780px;
+    height: 211px;
+    // padding-top: 20px;
+
+}
+
+.post-item {
+    width: 730px;
+    
+    background-color: $my-color;
+    border-bottom: solid 1px $myAcent-color;
+    &:nth-child(n + 2) {
+      padding-top: 30px;
+    }
+}
+
+.post-item_block {
+    width: 740px;
+    height: 211px;
+    display: flex;
+}
+
+.post-item_img {
+    width: 280px;
+    height: 180px;
+}
+
+.post-info {
+    padding: 0px 0px 0px 40px;
+}
+
+.post-info_title {
+    width: 432px;
+    margin-bottom: 7px;
+    @include fonts(300);
+    font-size: 24px;
+    line-height: 34px;
+    color: $text-color;
+}
+
+.post-info_name {
+    height: 22px;
+    @include fonts(400);
+    font-size: 14px;
+    line-height: 22px;
+    color: $accent-color;
+}
+
+.post-info_date,
+.post-info_line,
+.post-info_amount {
+    height: 22px;
+    @include fonts(400);
+    font-size: 14px;
+    line-height: 22px;
+    color: $my-accent;
+}
+
+.post-info_line {
+    padding: 0px 11px;
+    margin-bottom: 8px;
+}
+
+.post-info_hash {
+    height: 16px;
+    margin-bottom: 15px;
+    @include fonts(400);
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: $accent-link;
+}
+
+.post-info_svg {
+    fill: $my-accent;
+    display: flex;
+    align-items: center;
+}
+
+.post-info_amount {
+    padding-left: 10px;
+}
+
+.post-item_bottom-line {
+    width: 740px;
+    height: 5px;
+    background: $myAcent-color;
+}
+
+           .search-post_block-btn {
+               width: 260px;
+               height: 40px;
+               margin: 40px 50% 0px;
+               border-radius: 30px;
+               @include fonts(500);
+               font-size: 14px;
+               line-height: 18px;
+               text-align: center;
+               letter-spacing: 0.8px;
+               text-transform: uppercase;
+               border: 1px solid $accent-link;
+               background-color: $my-color;
+               color: $accent-link;
+    
+               &:hover {
+                   color: $my-color;
+                   background-color: $accent-link;
+               }
+           }
+
+}
+
+@media (max-width:1200px) {
+.block-posts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+};
+
+    .post-name {
+        width: 190px;
+        @include fonts(300);
+        font-size: 32px;
+        line-height: 44px;
+        color: $text-color;
+    }
+
+    .post-block_name{
+        padding: 40px 0px;
+
+    }
+
+    .post-info_title {
+        width: 432px;
+        margin-bottom: 7px;
+        @include fonts(300);
+        font-size: 24px;
+        line-height: 34px;
+        color: $text-color;
+    }
+
+    .post-info_name {
+        height: 22px;
+        @include fonts(400);
+        font-size: 14px;
+        line-height: 22px;
+        color: $accent-color;
+    }
+
+
+    .post-info_hash {
+        height: 16px;
+        margin-bottom: 15px;
+        @include fonts(400);
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: $accent-link;
+    }
+
+        .post-info_date,
+        .post-info_line,
+        .post-info_amount {
+            height: 22px;
+            @include fonts(400);
+            font-size: 14px;
+            line-height: 22px;
+            color: $my-accent;
+        }
+ 
+                .post-info_svg {
+                    fill: $my-accent;
+                    display: flex;
+                    align-items: center;
+                }
+        
+                .post-info_amount {
+                    padding-left: 10px;
+                }
+
+        .post-item {
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: $my-color;
+            border-bottom: solid 1px $myAcent-color;
+            padding-bottom: 30px;
+                &:nth-child(n + 2) {
+                    padding-top: 20px;
+                    
+                    }
+        }
+
+
+    .post-item_img {
+     padding-bottom: 20px;
+    }
+
+    .post-item_block {
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .search-post_block-btn {
+        width: 150px;
+        height: 40px;
+        margin: 40px 0px;
+        border-radius: 30px;
+        @include fonts(500);
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        border: 1px solid $accent-link;
+        background-color: $my-color;
+        color: $accent-link;
+                                    
+        &:hover {
+            color: $my-color;
+            background-color: $accent-link;
+        }
+    }
+
+        .post-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+        }
+
+
+                            }
+
+@media (max-width:768px) {
+    .post-item_img {
+        width: 315px;
+            padding-bottom: 20px;
+        }
+
+    .post-info_title {
+        width: 315px;
+        margin-bottom: 7px;
+        @include fonts(300);
+        font-size: 24px;
+        line-height: 34px;
+        color: $text-color;
+    }
+ .post-info_hash {
+    width: 315px ;
+     height: 16px;
+     margin-bottom: 15px;
+     @include fonts(400);
+     font-size: 12px;
+     line-height: 16px;
+     letter-spacing: 0.5px;
+     text-transform: uppercase;
+     color: $accent-link;
+ }
+
+
+ .search-post_block-btn {
+     width: 315px;
+     
+ }
+
+
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Company Name</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,28 +21,52 @@
             <div>
                 <div class="backdrop is-hidden" data-modal>
                     <div class="window">
-                        <div class="warning_block">
-                            <svg class="icon-Vector-close" width="18px" height="18px">
-                                <use href="./images/icon/symbol-defs.svg#icon-warning"></use>
-                            </svg>
-                            <p class="warning_title">You are not protected</p>
-                            <p class="warning_address">Your IP Address: 107.3.176.194</p>
-                            <p class="warning_address">Your ISP: Comcast Cable</p>
+                        
+                            <span class="warning_block">
+                             <div class="warning_block-min">
+                                <span class="warning_block-icon">
+                                    <svg class="icon-Vector-close" width="18px" height="18px">
+                                    <use href="./images/icon/symbol-defs.svg#icon-warning"></use>
+                                </svg>
+                                <p class="warning_title">You are not protected</p>
+                            </span>
+                              
+                                <p class="warning_address">Your IP Address: 107.3.176.194</p>
+                        </div>                     
+                            
+                            <div class="warning_block-min">
+                                <p class="warning_address">Your ISP: Comcast Cable</p>
                             <p class="warning_btn-more">Learn More ›</p>
+                        </div>
+                            
+
+                            </span>
+                            
                             <button class="warning_btn-close">
                                 <svg class="icon-Vector-close" width="18px" height="18px">
                                     <use href="./images/icon/symbol-defs.svg#icon-cancel">
                                     </use>
                                 </svg>
                             </button>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
-        <div class="container nav-menu">
-            <a href="index.html">
-                <span class="nav-menu_logo">Company Name</span>
-            </a>
+        <div class="container">
+           
+            <div class="nav-menu">
+                <div class="nav-menu_container-logo">
+                   <button class="nav-menu_icon">
+                   <svg width="24px" height="16px">
+                       <use href="./images/icon/symbol-defs.svg#icon-menu"  width="24px" height="16px"></use>
+                   </svg>
+               </button>
+
+                    <h1 class="nav-menu_logo">
+                Company Name
+            </h1>  
+                </div>
+              
             
                 <ul class="nav-menu_list">
                     <li class="nav-menu_item">WHY US
@@ -77,9 +101,13 @@
                 </ul>
             
 
-            
-                 <button class="nav-menu_btn">LOG IN</button>
+            <div class="nav-menu_btn-container">
+                <button class="nav-menu_btn">LOG IN</button>
                 <button class="nav-menu_btn">GET STARTED</button>
+            </div>
+            </div>
+        
+                 
            
             
         </div>
@@ -89,7 +117,7 @@
 
     
     <main>
-        <section>
+        
             <div class="container">
     
                 <h1 hidden >заголовок</h1>
@@ -113,11 +141,11 @@
     
             </div>
     
-        </section>
+        
     
         <!--nav menu-->
     
-        <section>
+        
     
             <div class="container">
     
@@ -125,13 +153,13 @@
                 <div  class="nav-tags">
                   <ul class="nav-tags_list">
                     <li class="nav-tags_item">TAGS:</li>
-                    <li class="nav-tags_item">bitcoin</li>
-                    <li class="nav-tags_item">bittorrent</li>
-                    <li class="nav-tags_item">irc</li>
-                    <li class="nav-tags_item">news</li>
-                    <li class="nav-tags_item">privacy</li>
-                    <li class="nav-tags_item">programming</li>
-                    <li class="nav-tags_item">security</li>
+                    <li class="nav-tags_item"><a href=""><span class="nav-tags_item-name">bitcoin</span></a></li>
+                    <li class="nav-tags_item"><a href=""><span class="nav-tags_item-name">bittorrent</span></a></li>
+                    <li class="nav-tags_item"><a href=""><span class="nav-tags_item-name">irc</span></a></li>
+                    <li class="nav-tags_item"><a href=""><span class="nav-tags_item-name">news</span></a></li>
+                    <li class="nav-tags_item"><a href=""><span class="nav-tags_item-name">privacy</span></a></li>
+                    <li class="nav-tags_item"><a href=""><span class="nav-tags_item-name">programming</span></a></li>
+                    <li class="nav-tags_item"><a href=""><span class="nav-tags_item-name">security</span></a></li>
                     <!-- --------------------------------------------------- -->
                 </ul>
                 <ul class="nav-tags_list">
@@ -142,14 +170,25 @@
                 
             </div>
     
-        </section>
+        
     
        
         <div class="container">
-            <div class="block-posts">      
-                 <section class="search-post">
+            <div class="block-posts"> 
+                <div class="post-block_name">
+                    <form class="search-post_form" action="">
+                        <input class="search-post_input" type="text" name="name" placeholder="Search blog">
+                        <button class="search-post_btn">
+                            <svg width="18px" height="18px">
+                                <use href="./images/icon/symbol-defs.svg#icon-search" width="18px" height="18px"></use>
+                            </svg>
+                        </button>
+                    </form>
+                    <h4 class="post-name">Recent posts</h4>
+                </div>
+                <div class="search-post_block-name">
+        <section class="search-post">
             <div class="post">
-                <h4 class="post-name">Recent posts</h4>
                 <ul class="post-list">
                     <li class="post-item">
                         <div class="post-item_block">
@@ -280,23 +319,13 @@
                 </ul>
             </div>
         </section>
-      
+      <hr class="line-post">
     
         <section class="search-post_block">
 
             
             <div class="search-post_container">
-                <form class="search-post_form" action="">
-                    
-                   
-                    <input class="search-post_input" type="text" name="name" placeholder="Search blog" >
-                   
-                <button class="search-post_btn"> 
-                    <svg width="18px" height="18px">
-                        <use href="./images/icon/symbol-defs.svg#icon-search" width="18px" height="18px"></use>
-                    </svg>
-                </button>
-            </form>
+             
             <div class="search-post_block-constainer">
                 <div class="search-post_block-title">
                     <svg width="38px" height="38px">
@@ -337,6 +366,7 @@
             
             </div>
         </section>
+    </div>
     </div>
  
 
@@ -397,39 +427,53 @@
                     <h4 class="pricing_title">Ways to pay:</h4>
                     <ul class="pricing_list">
                         <li class="pricing_item">
-                            <svg class="pricing_svg">
-                                <use href="./images/icon/symbol-Logos.svg#icon-visa_logo_icon_206647" width="92px" height="92px"></use>
+                            <a href="https://www.visa.com.ua/uk_UA" target="_blank" class="pricing_item-link">
+                                <svg class="pricing_svg"> 
+                                <use href="./images/icon/symbol-Logos.svg#icon-visa_logo_icon_206647"></use>
                             </svg>
+                        </a>
                         </li>
                         <li class="pricing_item">
-                            <svg class="pricing_svg">
-                                <use href="./images/icon/symbol-Logos.svg#icon-mc_vrt_pos" width="92px" height="92px"></use>
+                            <a href="https://www.mastercard.ua/uk-ua.html" target="_blank" class="pricing_item-link">
+                                <svg class="pricing_svg">
+                                <use href="./images/icon/symbol-Logos.svg#icon-mc_vrt_pos"></use>
                             </svg>
+                        </a>
                         </li>
                         <li class="pricing_item">
-                            <svg class="pricing_svg">
-                                <use href="./images/icon/symbol-Logos.svg#icon-amex_logo" width="92px" height="92px"></use>
+                            <a href="https://www.americanexpress.com/" target="_blank" class="pricing_item-link">
+                                <svg class="pricing_svg">
+                                <use href="./images/icon/symbol-Logos.svg#icon-amex_logo"></use>
                             </svg>
+                        </a>
                         </li>
                         <li class="pricing_item">
-                            <svg class="pricing_svg">
-                                <use href="./images/icon/symbol-Logos.svg#icon-business_finance" width="92px" height="92px"></use>
+                            <a href="https://www.paypal.com/ua/home"  target="_blank" class="pricing_item-link">
+                                <svg class="pricing_svg">
+                                <use href="./images/icon/symbol-Logos.svg#icon-business_finance"></use>
                             </svg>
+                        </a>
                         </li>
                         <li class="pricing_item">
-                            <svg class="pricing_svg">
-                                <use href="./images/icon/symbol-Logos.svg#icon-Bitcoin" width="92px" height="92px"></use>
+                            <a href="https://bitcoin.org/uk/"  target="_blank" class="pricing_item-link">
+                                <svg class="pricing_svg">
+                                <use href="./images/icon/symbol-Logos.svg#icon-Bitcoin"></use>
                             </svg>
+                        </a>
                         </li>
                         <li class="pricing_item">
-                            <svg class="pricing_svg">
-                                <use href="./images/icon/symbol-Logos.svg#icon-OK-Pay" width="92px" height="92px"></use>
+                            <a href="https://okpay.co/"  target="_blank" class="pricing_item-link">
+                                <svg class="pricing_svg">
+                                <use href="./images/icon/symbol-Logos.svg#icon-OK-Pay"></use>
                             </svg>
+                        </a>  
                         </li>
                         <li class="pricing_item">
-                            <svg class="pricing_svg">
-                                <use href="./images/icon/symbol-Logos.svg#icon-amazon_logo" width="100px" height="100px"></use>
+                            <a href="https://www.amazon.com/"  target="_blank" class="pricing_item-link">
+                                <svg class="pricing_svg">
+                                <use href="./images/icon/symbol-Logos.svg#icon-amazon_logo"></use>
                             </svg>
+                        </a>
                         </li>
                     </ul>
                 </div>
@@ -498,57 +542,124 @@
                     <li class="footer_block-item_LEGAL">Export Control Policy</li>
                 </ul>
             </div>
-            <div class="footer_block-ABOUT">
-                <h4 class="footer_block-title">ABOUT</h4>
-                <ul class="footer_block-title_ABOUT">
-                    <li class="footer_block-item_ABOUT">Private Internet Access is the leading VPN Service provider specializing in secure, encrypted VPN tunnels which create
-                several layers of privacy and security providing you safety on the internet. Our service is backed by multiple gateways
-                worldwide with access in 28+ countries, 44+ regions.</li>
-                   <li class="footer_block-item_ABOUT">Map data provided by Google.</li>
-                   <li class="footer_block-item_ABOUT">PC Mag Editor’s Choice award image reprinted with permission. © 2012 Ziff Davis, Inc. All Rights Reserved.</li>
-                   <li class="footer_block-item_ABOUT">PC Mag quote reprinted from www.pcmag.com with permission. © 2012 Ziff Davis, Inc. All Rights Reserved.</li>
-                   <li class="footer_block-item_ABOUT">© London Trust Media, Inc. All Rights Reserved.</li>
-                </ul>
-           
+            <div class="footer_social-block">
                 <h4 class="footer_title_title">SOCIAL</h4>
-                <ul class="footer_cocial">
+                <ul class="footer_social">
                     <li class="footer_svg">
-                        <svg width="30px" height="30px">
-                            <use href="./images/icon/symbol-defs.svg#icon-facebook" width="30px" height="30px"></use>
-                        </svg>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <svg width="30px" height="30px">
+                                <use href="./images/icon/symbol-defs.svg#icon-facebook" width="30px" height="30px"></use>
+                            </svg>
+                        </a>
+            
                     </li>
                     <li class="footer_svg">
-                        <svg width="30px" height="30px">
-                            <use href="./images/icon/tviter.svg#icon-twitter" width="30px" height="30px"></use>
-                        </svg>
+                        <a href="https://twitter.com/?lang=en" target="_blank">
+                            <svg width="30px" height="30px">
+                                <use href="./images/icon/tviter.svg#icon-twitter" width="30px" height="30px"></use>
+                            </svg>
+                        </a>
+            
                     </li>
                     <li class="footer_svg">
-                        <svg width="30px" height="30px">
-                            <use href="./images/icon/symbol-defs.svg#icon-google-plus" width="30px" height="30px"></use>
-                        </svg>
+                        <a href="https://www.google.com/" target="_blank">
+                            <svg width="30px" height="30px">
+                                <use href="./images/icon/symbol-defs.svg#icon-google-plus" width="30px" height="30px"></use>
+                            </svg>
+                        </a>
+            
                     </li>
                     <li class="footer_svg">
-                        <svg width="30px" height="30px">
-                            <use href="./images/icon/symbol-defs.svg#icon-linkedin" width="30px" height="30px"></use>
-                        </svg>
+                        <a href="https://www.linkedin.com/feed/" target="_blank">
+                            <svg width="30px" height="30px">
+                                <use href="./images/icon/symbol-defs.svg#icon-linkedin" width="30px" height="30px"></use>
+                            </svg>
+                        </a>
+            
                     </li>
                     <li class="footer_svg">
-                        <svg width="30px" height="30px">
-                            <use href="./images/icon/symbol-defs.svg#icon-reddit" width="30px" height="30px"></use>
-                        </svg>
+                        <a href="https://www.reddit.com/" target="_blank">
+                            <svg width="30px" height="30px">
+                                <use href="./images/icon/symbol-defs.svg#icon-reddit" width="30px" height="30px"></use>
+                            </svg>
+                        </a>
+            
                     </li>
                     <li class="footer_svg">
-                        <svg width="30px" height="30px">
-                            <use href="./images/icon/symbol-defs.svg#icon-youtube" width="30px" height="30px"></use>
-                        </svg>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <svg width="30px" height="30px">
+                                <use href="./images/icon/symbol-defs.svg#icon-youtube" width="30px" height="30px"></use>
+                            </svg>
+                        </a>
+            
                     </li>
                 </ul>
             </div>
+            
+                <div class="footer_block-ABOUT"><h4 class="footer_block-title">ABOUT</h4>
+                <ul class="footer_block-title_ABOUT">
+                    <li class="footer_block-item_ABOUT">Private Internet Access is the leading VPN Service provider specializing in
+                        secure, encrypted VPN tunnels which create
+                        several layers of privacy and security providing you safety on the internet. Our service is backed by multiple
+                        gateways
+                        worldwide with access in 28+ countries, 44+ regions.</li>
+                    <li class="footer_block-item_ABOUT">Map data provided by Google.</li>
+                    <li class="footer_block-item_ABOUT">PC Mag Editor’s Choice award image reprinted with permission. © 2012 Ziff Davis,
+                        Inc. All Rights Reserved.</li>
+                    <li class="footer_block-item_ABOUT">PC Mag quote reprinted from www.pcmag.com with permission. © 2012 Ziff Davis,
+                        Inc. All Rights Reserved.</li>
+                    <li class="footer_block-item_ABOUT">© London Trust Media, Inc. All Rights Reserved.</li>
+                </ul>
+            </div>
+           
+               
+            
            
         
         </div>
     </footer>
 
+    <div class="modal-menu is-hidden" data-modal>
+
+        <button class="modal_btn-close">
+            <svg class="icon-Vector-close" width="18px" height="18px">
+                <use href="./images/icon/symbol-defs.svg#icon-cancel">
+                </use>
+            </svg>
+        </button>
+    <ul class="modal-menu_list">
+        <li class="modal-menu_item">WHY US
+            <span class="modal-menu_svg">
+                <svg width="12px" height="12px">
+                    <use href="./images/icon/symbol-defs.svg#icon-triangle-down"></use>
+                </svg>
+            </span>
+    
+        </li>
+        <li class="modal-menu_item">VPN APPS
+    
+        </li>
+        <li class="modal-menu_item">SUPPORT
+            <span class="modal-menu_svg">
+                <svg width="12px" height="12px">
+                    <use href="./images/icon/symbol-defs.svg#icon-triangle-down"></use>
+                </svg>
+    
+            </span>
+    
+        </li>
+        <li class="modal-menu_item">RESOURCES
+            <span class="nmodalav-menu_svg">
+                <svg width="12px" height="12px">
+                    <use href="./images/icon/symbol-defs.svg#icon-triangle-down"></use>
+                </svg>
+    
+            </span>
+    
+        </li>
+    </ul>
+    </div>
+<script src="./burgerMenu.js"></script>
     <script src="./alert.js"></script>
 </body>
 </html>

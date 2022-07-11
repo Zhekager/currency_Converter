@@ -1,0 +1,35 @@
+  
+// @media (min-width: 1201px) {}
+@media (max-width: 1200px) {
+    .modal-menu {
+        position: absolute;
+        background-color: #22252E;
+        top: 100px;
+        left: 15px;
+        width: 130px;
+        height: 200px;
+        padding: 10px;
+    }
+
+    .modal-menu_list {
+        display: flex;
+        flex-direction: column;
+    }
+.modal-menu_item{
+        height: 30px;
+        padding: 10px 0px;
+        
+        @include fonts(500);
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: #889099;
+        fill: $fill-color;
+    
+        &:hover {
+            border-bottom: solid 3px $accent-link;
+        }
+}
+}
+// @media (max-width: 768px) {}

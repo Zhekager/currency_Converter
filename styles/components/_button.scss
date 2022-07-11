@@ -1,83 +1,250 @@
-.nav-menu_btn {
-    height: 40px;
-    border: 1px solid #4CB649;
-    border-radius: 30px;
-    padding: 0px 15px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
-    background-color: #FFFFFF;
-    color: #4CB649;
 
-    &:hover {
-        background-color: #4CB649;
+
+@media (min-width:1201px) {
+    .nav-menu_btn-container {
+        width: auto;
+    }
+
+    .nav-menu_btn {
+        height: 40px;
+        border: 1px solid #4CB649;
+        border-radius: 30px;
+        padding: 0px 15px;
+        margin: 0px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        background-color: #FFFFFF;
+        color: #4CB649;
+
+        &:hover {
+            background-color: #4CB649;
+            color: #FFFFFF;
+        }
+
+        &:first-child {
+            margin-right: 10px;
+        }
+    }
+    .nav-menu_icon{
+        display: none;
+    }
+
+    .search-post_btn {
+        position: absolute;
+        left: 1px;
+        top: 1px;
+        width: 56px;
+        height: 56px;
+        padding: 20px;
+        border: medium none;
+        background-image: none;
+        background: transparent;
+        float: left;
+        background-color: transparent;
+        background: #FFFFFF;
+        fill: #22252E;
+    }
+
+ 
+
+    .pricing-title_item-current_btn {
+        width: 205px;
+        height: 40px;
+        margin-top: 35px;
+        background-color: #fff;
+        border: 1px solid #4CB649;
+        border-radius: 30px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        color: #4CB649;
+
+        &:hover {
+            background-color: #4CB649;
+            color: #FFFFFF;
+        }
+    }
+
+    .warning_btn-more {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
         color: #FFFFFF;
+        // padding-right: 30px;
+        // margin-right: 300px;
     }
 
-    &:nth-child(1n) {
-        margin-right: 10px;
+          .warning_btn-close {
+              fill: #889099;
+              border: none;
+              background-color: #22252E;
+    
+              &:hover {
+                  fill: #FF8D00;
+              }
+          }
+
+  
+}
+
+@media (max-width: 1200px) {
+.nav-menu_btn-container {
+        width: auto;
     }
-}
 
-.search-post_btn {
-    position: absolute;
-    left: 1px;
-    top: 1px;
-    width: 56px;
-    height: 56px;
-    padding: 20px;
-    border: medium none;
-    background-image: none;
-    background: transparent;
-    float: left;
-    background-color: transparent;
-    background: #FFFFFF;
-    fill: #22252E;
-}
+    .nav-menu_btn {
+        height: 40px;
+        border: 1px solid #4CB649;
+        border-radius: 30px;
+        padding: 0px 15px;
+        margin: 0px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        background-color: #FFFFFF;
+        color: #4CB649;
 
-.pricing-title_item-current_btn {
-    width: 205px;
-    height: 40px;
-    margin-top: 35px;
-    background-color: #fff;
-    border: 1px solid #4CB649;
-    border-radius: 30px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
-    color: #4CB649;
+        &:hover {
+            background-color: #4CB649;
+            color: #FFFFFF;
+        }
 
-    &:hover {
-        background-color: #4CB649;
-        color: #FFFFFF;
+        &:first-child {
+            margin-right: 10px;
+        }
     }
-}
 
-.warning_btn-more {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #FFFFFF;
-    margin-right: 300px;
-}
-
-.warning_btn-close {
-    fill: #889099;
-    border: none;
-    background-color: #22252E;
-    &:hover {
-        fill: #FF8D00;
+    .nav-menu_icon {
+        width: 40px;
+        display: flex;
+        fill: #22252E;
+        border: none;
+        background-color: #FFFFFF;
+// &:hover {
+//         fill: #FF8D00;
+//     }
     }
+
+    .modal_btn-close{
+        border: none;
+        background-color: #2c303d00;
+        fill: #889099;
+        padding: 0;
+        &:hover {
+                fill: #FF8D00;
+            }
+    }
+
+
+        // fill: #889099;
+        // border: none;
+        // background-color: #22252E;
+    
+        // &:hover {
+        //     fill: #FF8D00;
+        // }
+
+
+        .warning_btn-more {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+                color: #FFFFFF;
+                padding-right: 30px;
+                // margin-right: 300px;
+            }
+        
+            .warning_btn-close {
+                fill: #889099;
+                border: none;
+                background-color: #22252E;
+        
+                &:hover {
+                    fill: $orange-color;
+                }
+            }
+
+                         .search-post_btn {
+                             position: absolute;
+                             left: 1px;
+                             top: 1px;
+                             width: 56px;
+                             height: 56px;
+                             padding: 20px;
+                             border: medium none;
+                             background-image: none;
+                             background: transparent;
+                             float: left;
+                             background-color: transparent;
+                             background: #FFFFFF;
+                             fill: #22252E;
+                         }
+
+
+                                                    
+}
+
+@media (max-width: 768px) {
+
+    .pricing-title_item-current_btn {
+            width: 205px;
+            height: 40px;
+            margin-top: 35px;
+            background-color: #fff;
+            border: 1px solid $orange-color;
+            border-radius: 30px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            text-align: center;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            color: $orange-color;
+    
+            &:hover {
+                background-color: $orange-color;
+                color: #FFFFFF;
+            }
+        }
+
+
+    .nav-menu_btn {
+    
+            &:first-child {
+                display: none;
+            }
+        }
+
+                .warning_btn-more {
+               
+                    padding-right: 5px;
+                    
+                }
+}
+
+
+.is-hidden {
+    visibility: hidden;
 }

@@ -1,0 +1,6 @@
+@mixin fonts ($type) {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: $type;
+
+}

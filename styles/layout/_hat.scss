@@ -1,0 +1,201 @@
+
+
+@media (min-width:1201px) {
+    .hat-container {
+        display: flex;
+        box-sizing: border-box;
+        // width: 1200px;
+        height: 400px;
+        margin-bottom: 30px;
+        background: $my-color;
+        border: 1px solid #D7D8D9;
+        border-radius: 6px;
+        filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.101961));
+    }
+
+    .hat-container_img {
+        width: 600px;
+        // height: 400px;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+
+    .hat-container_info {
+        padding: 60px 60px 45px 60px;
+    }
+
+    .hat-container_info_title {
+        width: 480px;
+        height: 136px;
+        margin-bottom: 84px;
+        @include fonts(300);
+        font-size: 24px;
+        line-height: 34px;
+        color: $text-color;
+    }
+
+    .hat-container_info_name {
+        height: 22px;
+        margin-bottom: 12px;
+        @include fonts(400);
+        font-size: 14px;
+        line-height: 22px;
+        color: $accent-color;
+    }
+
+    .hat-container_info_date,
+    .hat-container_info_line,
+    .hat-container_info_amount {
+        height: 22px;
+        @include fonts(400);
+        font-size: 14px;
+        line-height: 22px;
+        color: $my-accent;
+    }
+
+    .hat-container_info_line {
+        padding: 0px 8px;
+    }
+
+    .hat-container_info_hash {
+        height: 16px;
+        margin-bottom: 10px;
+        @include fonts(400);
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: $accent-link;
+    }
+
+    .hat-container_info_svg {
+        height: 16px;
+        fill: $my-accent;
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+    }
+
+    .hat-container_info_amount {
+        padding-left: 11.67px;
+    }
+}
+
+@media (max-width: 1200px) {
+.hat-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // height: 400px;
+        // margin-bottom: 30px;
+        background: $my-color;
+        border: 1px solid #D7D8D9;
+        border-radius: 6px;
+        filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.101961));
+    }
+
+    .hat-container_img {
+        width: 700px;
+        // height: 400px;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+
+    .hat-container_info {
+        padding: 60px 60px 45px 60px;
+    }
+
+    .hat-container_info_title {
+        width: 480px;
+        height: 136px;
+        margin-bottom: 84px;
+        @include fonts(300);
+        font-size: 24px;
+        line-height: 34px;
+        color: $text-color;
+    }
+
+    .hat-container_info_name {
+        height: 22px;
+        margin-bottom: 12px;
+        @include fonts(400);
+        font-size: 14px;
+        line-height: 22px;
+        color: $accent-color;
+    }
+
+    .hat-container_info_date,
+    .hat-container_info_line,
+    .hat-container_info_amount {
+        height: 22px;
+        @include fonts(400);
+        font-size: 14px;
+        line-height: 22px;
+        color: $my-accent;
+    }
+
+    .hat-container_info_line {
+        padding: 0px 8px;
+    }
+
+    .hat-container_info_hash {
+        height: 16px;
+        margin-bottom: 10px;
+        @include fonts(400);
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: $accent-link;
+    }
+
+    .hat-container_info_svg {
+        height: 16px;
+        fill: $my-accent;
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+    }
+
+    .hat-container_info_amount {
+        padding-left: 11.67px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .hat-container {
+        width: 335px;
+        display: flex;
+        margin: 0px auto;
+        flex-direction: column;
+        align-items: center;
+        // height: 400px;
+        // margin-bottom: 30px;
+        background: $my-color;
+        border: 1px solid #D7D8D9;
+        border-radius: 6px;
+        filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.101961));
+    }
+
+    .hat-container_img {
+        width: 335px;
+        // height: 400px;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+
+    .hat-container_info {
+        padding: 30px;
+    }
+
+    .hat-container_info_title {
+        width: 275px;
+        height: auto;
+        margin-bottom: 14px;
+        @include fonts(300);
+        font-size: 24px;
+        line-height: 34px;
+        color: $text-color;
+    }
+}

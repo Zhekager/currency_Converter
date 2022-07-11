@@ -3,6 +3,7 @@ const refs = {
   close: document.querySelector(".warning_btn-close"),
 };
 refs.close.addEventListener("click", closeMenu);
+
 let value = 0;
 function closeMenu() {
   value += 1;
