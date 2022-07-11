@@ -13,8 +13,8 @@
         background: linear-gradient(135deg, #3D4251 0%, #272B35 100%);
     }
 
- .pricing_item-link {
-     fill: $my-accent;
+    .pricing_item-link {
+        fill: $my-accent;
  }
     .pricing-title {
         height: 64px;
@@ -29,6 +29,7 @@
 
     .pricing-title_list {
         display: flex;
+      
     }
 
     .pricing-title_item {
@@ -48,6 +49,7 @@
             border: 4px solid #4CB649;
             border-radius: 4px;
         }
+                 
     }
 
     .pricing-title_item:nth-child(2) {
@@ -66,6 +68,7 @@
     }
 
     .pricing-title_block {
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -208,7 +211,6 @@ use{
 }
 
 .pricing {
-        // height: 800px;
         padding-bottom: 53px;
         padding-left: 0;
         padding-right: 0;
@@ -217,14 +219,11 @@ use{
         display: flex;
         flex-direction: column;
         align-items: center;
-        
-        // margin-top: 158px;
         background: linear-gradient(135deg, #3D4251 0%, #272B35 100%);
     }
 
 
     .pricing-title {
-        
         padding: 40px 0px;
         @include fonts(300);
         font-size: 48px;
@@ -251,9 +250,6 @@ use{
         border: 1px solid $myAcent-color;
         border-radius: 6px;
         filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.501961));
-        // &:last-child{
-        //     margin: 0px 15px;
-        // }
         &:hover {
             transform: scale(1.08);
             background: #FFFFFF;
@@ -425,9 +421,7 @@ use{
 }
 
 @media (max-width: 768px) {
-
     .pricing {
-            // height: 800px;
             padding-bottom: 53px;
             padding-left: 0;
             padding-right: 0;
@@ -436,14 +430,11 @@ use{
             display: flex;
             flex-direction: column;
             align-items: center;
-    
-            // margin-top: 158px;
             background: linear-gradient(135deg, #3D4251 0%, #272B35 100%);
         }
     
     
         .pricing-title {
-    
             padding: 40px 20px;
             @include fonts(300);
             font-size: 48px;
@@ -473,9 +464,8 @@ use{
     
             
             &:hover {
-                // transform: scale(1.08);
-                background: #FFFFFF;
-                border: 4px solid #FF8D00;
+                background: $my-color;
+                border: 4px solid $orange-color;
                 border-radius: 4px;
             }
         }

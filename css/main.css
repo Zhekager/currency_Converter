@@ -45,10 +45,11 @@
     fill: #22252E;
   }
   .pricing-title_item-current_btn {
+    position: absolute;
     width: 205px;
     height: 40px;
-    margin-top: 35px;
-    background-color: #fff;
+    bottom: 20px;
+    background-color: #FFFFFF;
     border: 1px solid #4CB649;
     border-radius: 30px;
     font-family: 'Roboto';
@@ -111,6 +112,28 @@
   .nav-menu_btn:first-child {
     margin-right: 10px;
   }
+  .pricing-title_item-current_btn {
+    position: absolute;
+    width: 205px;
+    height: 40px;
+    bottom: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #4CB649;
+    border-radius: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #4CB649;
+  }
+  .pricing-title_item-current_btn:hover {
+    background-color: #4CB649;
+    color: #FFFFFF;
+  }
   .nav-menu_icon {
     width: 40px;
     display: -webkit-box;
@@ -165,10 +188,11 @@
 
 @media (max-width: 768px) {
   .pricing-title_item-current_btn {
+    position: absolute;
     width: 205px;
     height: 40px;
-    margin-top: 35px;
-    background-color: #fff;
+    bottom: 20px;
+    background-color: #FFFFFF;
     border: 1px solid #FF8D00;
     border-radius: 30px;
     font-family: 'Roboto';
@@ -1220,7 +1244,7 @@ ul {
     display: -ms-flexbox;
     display: flex;
   }
-  .search-post_block-constainer:nth-child(-n + 3) {
+  .search-post_block-constainer:nth-child(-n + 2) {
     border-bottom: solid 1px #EBECED;
     margin-bottom: 32px;
   }
@@ -1552,7 +1576,6 @@ ul {
     color: #22252E;
     -webkit-transition: all 0.25s ease;
     transition: all 0.25s ease;
-    outline: none;
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
@@ -1764,6 +1787,7 @@ ul {
     color: #323642;
   }
   .pricing-title_block {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2440,7 +2464,7 @@ ul {
   }
   .footer_social-block {
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     padding-top: 20px;
     padding-right: 265px;
   }
@@ -2546,6 +2570,7 @@ ul {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-bottom: 20px;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;

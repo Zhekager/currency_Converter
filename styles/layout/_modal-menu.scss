@@ -1,9 +1,8 @@
   
-// @media (min-width: 1201px) {}
 @media (max-width: 1200px) {
     .modal-menu {
         position: absolute;
-        background-color: #22252E;
+        background-color: $text-color;
         top: 100px;
         left: 15px;
         width: 130px;
@@ -18,13 +17,12 @@
 .modal-menu_item{
         height: 30px;
         padding: 10px 0px;
-        
         @include fonts(500);
         font-size: 14px;
         line-height: 18px;
         letter-spacing: 1.5px;
         text-transform: uppercase;
-        color: #889099;
+        color: $my-accent;
         fill: $fill-color;
     
         &:hover {
@@ -32,4 +30,3 @@
         }
 }
 }
-// @media (max-width: 768px) {}

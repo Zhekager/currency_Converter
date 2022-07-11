@@ -25,7 +25,7 @@
     }
     .footer_social-block{
         position: absolute;
-        bottom: 0;
+        bottom: 20px;
         padding-top: 20px;
         padding-right: 265px;
     }
@@ -99,7 +99,6 @@
     .footer_title_title {
         width: 54px;
         height: 18px;
-        // margin-top: 150px;
         margin-bottom: 25px;
         @include fonts(700);
         font-size: 14px;
@@ -118,18 +117,18 @@
 
     .footer_svg {
         fill: $accent-color;
-width: 30px;
-height: 30px;
-        &:nth-child(-n + 5) {
+        width: 30px;
+        height: 30px;
+          &:nth-child(-n + 5) {
             margin-right: 31px;
         }
     }}
 
 @media (max-width: 1200px) {
-.footer {
-        // height: 620px;
+    .footer {
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 20px;
         justify-content: space-evenly;
     }
 
@@ -147,13 +146,8 @@ height: 30px;
         color: $black-color;
     }
 
-        //  .footer_social-block {
-        //      padding-top: 20px;
-        //      padding-right: 265px;
-        //  }
 
    .footer_social {
-
        display: flex;
        flex-direction: column;
        height: auto;
@@ -183,9 +177,9 @@ height: 30px;
         padding-top: 14px;
         padding-bottom: 14px;
     }
-        .footer_block-ABOUT{
-            display: flex;
-            flex-direction: column;
+    .footer_block-ABOUT{
+        display: flex;
+        flex-direction: column;
         }
 
     .footer_block-list_Company {
@@ -223,7 +217,6 @@ height: 30px;
     .footer_title_title {
         width: 54px;
         height: 18px;
-        // margin-top: 150px;
         margin-bottom: 25px;
         @include fonts(700);
         font-size: 14px;
@@ -242,7 +235,6 @@ height: 30px;
 
     .footer_svg {
         fill: $accent-color;
-
         &:nth-child(-n + 5) {
             margin-right: 31px;
         }
@@ -251,14 +243,10 @@ height: 30px;
 }
 
 @media (max-width: 768px) {
-
-.footer {
-        // height: 620px;
+    .footer {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
-
-        
+        justify-content: space-around; 
     }
 
     .footer_title {
@@ -303,23 +291,20 @@ height: 30px;
         padding-bottom: 14px;
     }
     .footer_block-item_ABOUT{
-        
-                width: auto;
-                height: auto;
-            
+        width: auto;
+        height: auto;      
     }
 
-         .footer_block-title_ABOUT {
-             width: auto;
-             height: auto;
-         }
+    .footer_block-title_ABOUT {
+        width: auto;
+        height: auto;
+    }
 
     .footer_block-ABOUT {
         position: relative;
         width: 335px;
         display: flex;
-        flex-direction: column;
-       
+        flex-direction: column; 
     }
 
     .footer_block-list_Company {
@@ -369,7 +354,6 @@ height: 30px;
     }
 
     .footer_social {
-        
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -377,9 +361,6 @@ height: 30px;
         height: auto;
     }
 
-        // .footer_social-block{
-        //     position: absolute;
-        // }
     .footer_svg {
         fill: $accent-color;
 

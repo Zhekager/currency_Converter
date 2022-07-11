@@ -1,21 +1,14 @@
-
-
-
 @media (min-width:1201px) {
-.nav-menu {
-        // max-width: 1600px;
-        // margin: 0px auto;
+    .nav-menu {
         height: 100px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        // padding-left: 180px;
     }
 
     .nav-menu_logo {
         width: 136px;
         height: 22px;
-        // margin-right: 243.5px;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
@@ -50,20 +43,14 @@
         margin-right: 30px;
     }
 
-    // .nav-menu_item:nth-last-child(1) {
-    //     // margin-right: 264px;
-    // }
 }
 
 @media (max-width: 1200px) {
-.nav-menu {
-        // max-width: 1600px;
-        // margin: 0px auto;
+    .nav-menu {
         height: 100px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        // padding-left: 180px;
     }
 
 
@@ -71,7 +58,6 @@
     .nav-menu_logo {
         width: 136px;
         height: 22px;
-        // margin-right: 243.5px;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
@@ -111,20 +97,14 @@
         margin-right: 30px;
     }
 
-    // .nav-menu_item:nth-last-child(1) {
-    //     // margin-right: 264px;
-    // }
 }
 
 @media (max-width: 768px) {
 .nav-menu {
-        // max-width: 1600px;
-        // margin: 0px auto;
         height: 100px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        // padding-left: 180px;
     }
 
 
@@ -132,7 +112,6 @@
     .nav-menu_logo {
         width: 136px;
         height: 22px;
-        // margin-right: 243.5px;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;

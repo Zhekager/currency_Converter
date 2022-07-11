@@ -1,8 +1,5 @@
-
-
 @media (min-width:1201px) {
     .nav-tags {
-        // width: 1200px;
         height: 60px;
         display: flex;
         align-items: center;
@@ -41,10 +38,6 @@
 
     .nav-tags_item:nth-last-child(-n + 7) {
         margin-right: 34px;
-    }
-
-    .nav-tags_item:last-child {
-        // margin-right: 234px;
     }
 
     .nav-tags_item-name {
