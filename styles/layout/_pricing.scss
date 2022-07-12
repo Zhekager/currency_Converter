@@ -81,8 +81,11 @@
     }
 
     .pricing-title_item-current {
-        height: 66px;
+        // height: 66px;
         display: flex;
+            flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
     }
 
     .pricing-title_item-sumbol,
@@ -286,8 +289,11 @@ use{
     }
 
     .pricing-title_item-current {
-        height: 66px;
+        // height: 66px;
         display: flex;
+            flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
     }
 
     .pricing-title_item-sumbol,
@@ -498,8 +504,11 @@ use{
         }
     
         .pricing-title_item-current {
-            height: 66px;
+            // height: 66px;
             display: flex;
+                flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
         }
     
         .pricing-title_item-sumbol,
