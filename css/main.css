@@ -903,6 +903,9 @@ ul {
 }
 
 @media (min-width: 1201px) {
+  .post {
+    position: relative;
+  }
   .post-block_name {
     padding-bottom: 40px;
     display: -webkit-box;
@@ -1035,9 +1038,11 @@ ul {
     background: #EBECED;
   }
   .search-post_block-btn {
+    position: absolute;
+    bottom: 128px;
     width: 260px;
     height: 40px;
-    margin: 40px 50% 0px;
+    margin: 0px 40% 0px;
     border-radius: 30px;
     font-family: Roboto;
     font-style: normal;
@@ -1725,7 +1730,6 @@ ul {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 158px;
     background: linear-gradient(135deg, #3D4251 0%, #272B35 100%);
   }
   .pricing_item-link {
