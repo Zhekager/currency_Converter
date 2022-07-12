@@ -1225,6 +1225,10 @@ ul {
     line-height: 34px;
     color: #22252E;
   }
+  .post-info {
+    padding: 0px 0px 0px 40px;
+    width: 380px;
+  }
   .post-info_hash {
     width: 315px;
     height: 16px;
@@ -1240,6 +1244,7 @@ ul {
   }
   .search-post_block-btn {
     width: 315px;
+    margin-left: 30px;
   }
 }
 
